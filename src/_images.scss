@@ -1,0 +1,10 @@
+@mixin image-fluid($display: block) {
+	display: $display;
+	max-width: 100%;
+	height: auto;
+}
+
+@mixin background-image-fluid($img, $width, $height) {
+	background-image: url($img);
+	background-size: $width, $height;
+}

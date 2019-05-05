@@ -1,0 +1,15 @@
+@mixin flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+@mixin grid($flex) {
+	@if $flex {
+		@include flex;
+	} @else {
+		display: block;
+	}
+}
